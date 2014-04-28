@@ -22,7 +22,7 @@ color: #888;
 }
 </style>
 
-<script src="//ajax.googleapis.com/ajax/libs/mootools/1.3.2/mootools-yui-compressed.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/mootools/1.3.2/mootools-yui-compressed.js"></script>
 
 <script src="../Source/MooComplete.js"></script>
 
@@ -156,7 +156,8 @@ var tags = fruits.concat(cities);
 window.addEvent('domready', function() {
   // Simple example
   new MooComplete('demo', {
-    list: fruits
+    list: fruits,
+    showonkeydown: true
   });
 
 
